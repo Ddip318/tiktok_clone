@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+// ignore: unused_import
 import 'package:tiktok_clone/constants/gaps.dart';
 import 'package:tiktok_clone/constants/sizes.dart';
 
@@ -18,7 +19,7 @@ class AuthButton extends StatelessWidget {
     return FractionallySizedBox(
       widthFactor: 1,
       child: Container(
-        padding: EdgeInsets.all(
+        padding: const EdgeInsets.all(
           Sizes.size14,
         ),
         decoration: BoxDecoration(
@@ -33,7 +34,7 @@ class AuthButton extends StatelessWidget {
             Expanded(
               child: Text(
                 text,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: Sizes.size16,
                   fontWeight: FontWeight.w600,
                 ),
