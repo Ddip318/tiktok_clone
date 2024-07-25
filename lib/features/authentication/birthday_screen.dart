@@ -33,7 +33,7 @@ class _UsernameScreenState extends State<BirthdayScreen> {
   void _onNextTap() {
     Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (context) => const InerestsScreen(),
+        builder: (context) => const InterestsScreen(),
       ),
     );
   }
