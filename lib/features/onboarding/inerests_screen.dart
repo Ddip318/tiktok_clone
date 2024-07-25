@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:tiktok_clone/constants/gaps.dart';
 import 'package:tiktok_clone/constants/sizes.dart';
 import 'package:tiktok_clone/features/onboarding/widgets/interests_button.dart';
+import 'package:tiktok_clone/features/onboarding/widgets/tutorial_screen.dart';
 
 const interests = [
   "Daily Life",
@@ -69,6 +70,15 @@ class _InterestsScreenState extends State<InterestsScreen> {
         _showTitle = false;
       });
     }
+  }
+
+  void _onNextTap() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => const TutorialScreen(),
+      ),
+    );
   }
 
   @override
@@ -148,7 +158,7 @@ class _InterestsScreenState extends State<InterestsScreen> {
             right: Sizes.size12,
           ),
           child: CupertinoButton(
-            onPressed: () {},
+            onPressed: _onNextTap,
             color: Theme.of(context).primaryColor,
             child: Text('Next'),
           ),
