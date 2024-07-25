@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class PasswordSecreen extends StatelessWidget {
-  const PasswordSecreen({super.key});
+class InerestsScreen extends StatelessWidget {
+  const InerestsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
